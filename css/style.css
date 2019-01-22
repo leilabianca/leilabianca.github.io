@@ -1,3 +1,4 @@
+/** Reset **/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -18,11 +19,11 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
@@ -42,10 +43,60 @@ table {
 	border-spacing: 0;
 }
 
-body {
+/** End Reset **/
+
+html, body {
     background-color: #efa428;
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+.topbar {
+    display: flex;
+    padding-top: 2em;
+    align-items: center;
+}
+
+.logo {
+    flex: 1;
 }
 
 .logo img {
     width: 150px;
+}
+
+ul.navigation {
+    display: flex;
+    flex: 3;
+}
+
+ul.navigation li {
+    flex: 1;
+    text-align: center;
+}
+
+ul.navigation li a {
+    padding: 0 .5em .5em;
+    font: normal 2em 'Satisfy', cursive;
+    text-decoration: none;
+    color: white;
+}
+
+ul.navigation li a.active {
+    background-image: url(/images/menu-underline.png);
+    background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.content+.content {
+    min-height: 400px;
 }
