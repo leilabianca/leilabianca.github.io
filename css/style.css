@@ -62,6 +62,7 @@ h1 {
     position: absolute;
     width: 100%;
     display: block;
+    background-color: white;
 }
 
 .topbar.fixed {
@@ -75,7 +76,7 @@ h1 {
 }
 
 .logo {
-    padding-right: 5em;
+    padding-right: 4em;
 }
 
 .logo img {
@@ -114,7 +115,7 @@ ul.navigation li:not(:last-of-type)::after {
 }
 
 ul.navigation li a {
-    padding: 0 .5em .3em;
+    padding: 0 .5em .55em;
     font: normal 1.1em "Courier New", Courier, monospace;
     text-decoration: none;
     text-transform: uppercase;
@@ -122,9 +123,9 @@ ul.navigation li a {
 }
 
 ul.navigation li a.active {
-    background-image: url(/images/menu-underline.png);
+    background-image: url(../images/underline.svg);
     background-position: center bottom;
-    background-size: 70px;
+    background-size: 60px;
     background-repeat: no-repeat;
 }
 
@@ -133,7 +134,7 @@ ul.navigation li a.active {
     margin: 0 auto;
 }
 
-.content+.content, h1+.content {
+.content+.content, nav+.content {
     min-height: 400px;
     padding-top: 180px;
 }
