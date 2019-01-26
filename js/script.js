@@ -34,7 +34,7 @@
 
     function stickTopMenu() {
         window.addEventListener('scroll', function () {
-            const topOffset = getWindowTopOffset() + 30;
+            const topOffset = getWindowTopOffset() + 50;
 
             if (topOffset > topMenuHeight && !topMenu.classList.contains('fixed')) {
                 topMenu.classList.add('fixed');

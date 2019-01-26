@@ -71,7 +71,7 @@ h1 {
 
 .topbar .content {
     display: flex;
-    padding-top: 2em;
+    padding: 2em 0;
     align-items: center;
 }
 
@@ -115,7 +115,7 @@ ul.navigation li:not(:last-of-type)::after {
 }
 
 ul.navigation li a {
-    padding: 0 .5em .55em;
+    padding: 0 .3em .55em;
     font: normal 1.1em "Courier New", Courier, monospace;
     text-decoration: none;
     text-transform: uppercase;
@@ -135,6 +135,23 @@ ul.navigation li a.active {
 }
 
 .content+.content, nav+.content {
-    min-height: 400px;
     padding-top: 180px;
+}
+
+.content h2 {
+    font-size: 2em;
+    margin-bottom: 1.4em;
+}
+
+.content h3 {
+    font-size: 1.5em;
+    margin-bottom: .8em;
+}
+
+.content .item {
+    margin-bottom: 2em;
+}
+
+.content .item img {
+    width: 100%;
 }
