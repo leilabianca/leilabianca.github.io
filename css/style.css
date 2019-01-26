@@ -59,7 +59,7 @@ h1 {
 }
 
 .topbar {
-    position: relative;
+    position: absolute;
     width: 100%;
     display: block;
 }
@@ -133,10 +133,7 @@ ul.navigation li a.active {
     margin: 0 auto;
 }
 
-.content+.content {
-    padding-top: 180px;
-}
-
 .content+.content, h1+.content {
     min-height: 400px;
+    padding-top: 180px;
 }
